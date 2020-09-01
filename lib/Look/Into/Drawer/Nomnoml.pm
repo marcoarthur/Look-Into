@@ -25,11 +25,19 @@ sub draw_class ( $self, $class, $metaclass ) {
 
 __END__
 
+=encoding utf-8
+
+=head1 NAME
+
+Look::Into::Drawer::Nomnoml - drawer for Look::Into
+
+=head1 SYNOPSYS
+
+ use Look::Into::Drawer::Nomnoml;
+
 =head1 DESCRIPTION
 
 Draws using syntax language for Nomnoml
-
-=head1 SYNOPSYS
 
 =cut
 

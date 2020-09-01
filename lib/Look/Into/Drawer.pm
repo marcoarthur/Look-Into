@@ -39,9 +39,20 @@ sub draw {
 
 __END__
 
-=head1 DESCRIPTION
+=encoding utf-8
+
+=head1 NAME
+
+Look::Into::Drawer - the base drawer for Look::Into
 
 =head1 SYNOPSYS
+
+  use Look::Into::Drawer;
+
+=head1 DESCRIPTION
+
+Base drawer to Look::Into module. serves to render the information collected 
+for the class
 
 =cut
 
