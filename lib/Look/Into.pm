@@ -5,6 +5,7 @@ use 5.028;
 use Mojo::Base -signatures;
 use Mojo::Loader qw(load_class);
 use Carp;
+use List::Util qw(first);
 use namespace::autoclean;
 
 our $VERSION = '0.01';
@@ -44,7 +45,7 @@ sub BUILD {
 sub this ( $self, $class_or_obj ) {
     $self->_load($class_or_obj);
     my $class = ref $class_or_obj ? ref $class_or_obj : $class_or_obj;
-    push @{ $self->classes }, $class;
+    push @{ $self->classes }, $class unless first { $_ eq $class } $self->classes->@*;
     $self;
 }
 
