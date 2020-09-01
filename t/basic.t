@@ -6,8 +6,8 @@ use Look::Into;
 
 # replace with the actual test
 my $l = Look::Into->new;
-$l->this('Mojo::UserAgent');
-
-ok 1;
+isa_ok $l, 'Look::Into';
+can_ok $l, qw(this draw);
+like $l->this('Mojo::UserAgent')->draw, qr/^\s*\[/, "Drawn";
 
 done_testing;
