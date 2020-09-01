@@ -43,6 +43,8 @@ sub BUILD {
 
 sub this ( $self, $class_or_obj ) {
     $self->_load($class_or_obj);
+    my $class = ref $class_or_obj ? ref $class_or_obj : $class_or_obj;
+    push @{ $self->classes }, $class;
     $self;
 }
 
