@@ -92,6 +92,8 @@ attributes.
   # OR
   my $l = Look::Into->new( classes => [ qw( DBD::Pg DBD::SQLite ) ] );
   $l->draw;
+  $ OR
+  Look::Into->new( classes => [ qw( DBD::Pg DBD::SQLite ) ] )->draw;
 
 
 =head1 DESCRIPTION
