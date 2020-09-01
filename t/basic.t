@@ -12,5 +12,6 @@ like $l->this('Mojo::UserAgent')->draw, qr/^\s*\[/, "Drawn";
 is_deeply $l->classes, ['Mojo::UserAgent'], "List of classes looked into";
 
 my $l2 = Look::Into->new( classes => [ qw(Mojo::URL Mojo::Base) ] );
+is_deeply $l2->classes, [ qw(Mojo::URL Mojo::Base) ], "Initialize with list";
 
 done_testing;
