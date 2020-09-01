@@ -38,9 +38,7 @@ has classes => (
 sub BUILD {
     my $self = shift;
 
-    for my $class ( $self->classes->@* ) {
-        $self->this($class);
-    }
+    $self->this($_) for $self->classes->@*;
 }
 
 sub this ( $self, $class_or_obj ) {
@@ -54,9 +52,7 @@ sub _load ( $self, $class ) {
     # Try to load the class
     if ( !ref $class ) {
         my $e = load_class($class);
-        if ($e) {
-            croak qq{ Failed loading $class };
-        }
+        croak qq{ Failed loading $class } if $e;
     } else {
         $class = ref $class;
     }

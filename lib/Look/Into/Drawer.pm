@@ -20,7 +20,7 @@ sub draw {
     my ( $self, $class ) = @_;
     return unless $self->classes;
 
-    # Got a class to draw
+    # Got a single class to draw
     if ($class) {
         croak qq{ You need first ask Look::Into->this($class) } unless $self->classes->{$class};
         return $self->draw_class( $class, $self->classes->{$class} );

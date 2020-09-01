@@ -14,9 +14,9 @@ sub draw_class ( $self, $class, $metaclass ) {
 
     my $mlist = join ';', @methods;
 
-    my $noml = <<EOT;
+    my $noml = <<~EOT;
     [ $class | $mlist ]
-EOT
+    EOT
 
     return $noml;
 }
