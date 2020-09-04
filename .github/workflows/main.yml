@@ -17,11 +17,6 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Setup Perl environment
-      # You may pin to the exact commit or the version.
-      # uses: shogo82148/actions-setup-perl@899aaa4ef264332b884870baba643dae28853ed5
         uses: shogo82148/actions-setup-perl@v1.6.2
-        with:
-        # The Perl version to download (if necessary) and use. Example: 5.30.0
