@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Just look into a class to have a view of its parents, methods and attributes.",
    "author" : [
       "Marco Arthur <arthurpbs@gmail.com>"
    ],
@@ -47,6 +47,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/marcoarthur/Look-Into/issues"
+      },
+      "homepage" : "https://github.com/marcoarthur/Look-Into",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/marcoarthur/Look-Into.git",
+         "web" : "https://github.com/marcoarthur/Look-Into"
+      }
+   },
    "version" : "0.01",
    "x_generated_by_perl" : "v5.28.2",
    "x_serialization_backend" : "Cpanel::JSON::XS version 4.21",
