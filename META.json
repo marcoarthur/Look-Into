@@ -37,12 +37,19 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "List::Util" : "0",
+            "Mojo::Base" : "0",
+            "Mojo::Loader" : "0",
+            "Moo" : "0",
+            "Moo::Role" : "0",
+            "Moose" : "0",
+            "namespace::autoclean" : "0",
+            "perl" : "5.028"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Test::More" : "0"
          }
       }
    },
