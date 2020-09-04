@@ -1,7 +1,18 @@
-requires 'perl', '5.008005';
+requires 'List::Util';
+requires 'Mojo::Base';
+requires 'Mojo::Loader';
+requires 'Moo';
+requires 'Moo::Role';
+requires 'Moose';
+requires 'namespace::autoclean';
+requires 'perl', '5.028';
 
-# requires 'Some::Module', 'VERSION';
+on configure => sub {
+    requires 'Module::Build::Tiny', '0.034';
+};
 
 on test => sub {
-    requires 'Test::More', '0.96';
+    requires 'Test::More';
 };
+
+

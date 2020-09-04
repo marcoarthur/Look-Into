@@ -2,5 +2,7 @@ Revision history for Look-Into
 
 {{$NEXT}}
 
+    - Fix missing deps for cpanfile
+
 0.01  2020-09-03 23:36:49 -03
         - Initial release
